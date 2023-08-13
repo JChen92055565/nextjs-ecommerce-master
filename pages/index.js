@@ -16,7 +16,11 @@ export default function Home({products}) {
 
   return (
     <Layout>
-      <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search for products..." className="bg-gray-200 w-full py-2 px-4 rounded-xl"/>
+    <h2 className="text-2xl py-5 capitalize">
+      Here are the options currently offered 
+      by our team to help you crush your goals!
+    </h2>
+      <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search for different options..." className="bg-gray-200 w-full py-2 px-4 rounded-xl"/>
       <div>
         {categoriesNames.map(categoryName => (
           <div key={categoryName}>

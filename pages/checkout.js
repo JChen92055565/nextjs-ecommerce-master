@@ -25,7 +25,7 @@ export default function CheckoutPage() {
     if (pos !== -1) {
       setSelectedProducts( prev => {
         return prev.filter((value,index) => index !== pos);
-      });
+      }); 
     }
   }
 
